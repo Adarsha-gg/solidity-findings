@@ -38,6 +38,18 @@ contract FundMe {
         if (msg.sender != i_owner) revert NotOwner();
         _;
     }
+
+    function cheap() public onlyOwner(){
+        uint256 length = funders.length;
+        for(uint256 index = 0; index < length; index ++)
+        {
+            address funder = funders[index];
+            addressToAmountFunded[funder] = 0;
+        }
+        funders = new address[](0);
+        (bool callSuccess, ) = payable(msg.sender).call{value: address(this).balance}("");
+        require(callSuccess, "failed");
+    }
     
     function withdraw() public onlyOwner {
         for (uint256 funderIndex=0; funderIndex < funders.length; funderIndex++){

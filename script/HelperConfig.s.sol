@@ -2,7 +2,7 @@
 pragma solidity ^0.8.18;
 
 // mocks and contract addresses
-import {Script} from "forge-std/Script.sol";
+import {Script} from "../lib/forge-std/src/Script.sol";
 import {MockV3Aggregator} from "../test/mocks/mockv3agri.sol";
 
 contract HelperConfig is Script{

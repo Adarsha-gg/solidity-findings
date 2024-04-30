@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 
-import {Test, console} from "forge-std/Test.sol";
-import {FundMe} from "../src/FundMe.sol";
-import {DeployFund} from "../Script/DeployFundMe.s.sol";
+import {Test, console} from "../../lib/forge-std/src/Test.sol";
+import {FundMe} from "../../src/FundMe.sol";
+import {DeployFund} from "../../Script/DeployFundMe.s.sol";
 
 contract FundMeTest is Test {
     FundMe fuu;
@@ -77,5 +77,6 @@ contract FundMeTest is Test {
         assertEq(afterContractBalance,0);
         
 
+    
     }
 }
