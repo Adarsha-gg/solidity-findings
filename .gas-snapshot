@@ -1,0 +1,8 @@
+FundMeTest:testEthFails() (gas: 23039)
+FundMeTest:testFundertoArray() (gas: 100075)
+FundMeTest:testMin() (gas: 8390)
+FundMeTest:testOwner() (gas: 14895)
+FundMeTest:testOwnerWithdraw() (gas: 101979)
+FundMeTest:testPranks() (gas: 100137)
+FundMeTest:testPrice() (gas: 13589)
+FundMeTest:testWithOwner() (gas: 86572)
