@@ -7,7 +7,7 @@ import {DevOpsTools} from "../lib/foundry-devops/src/DevOpsTools.sol";
 import {FundMe} from "../src/FundMe.sol";
 
 contract FundFundMe is Script{
-    uint256 constant MONI = 3 ether;
+    uint256 constant MONI = 0.3 ether;
 
     function fundFundMe(address recent) public{
         vm.startBroadcast();

@@ -10,8 +10,8 @@ contract IntegrationTest is Test{
     FundMe fundMe;
 
     address USER = makeAddr("user");
-    uint256 constant MONI =  1 ether;
-    uint256 constant balance =  100 ether;
+    uint256 constant MONI =  0.2 ether;
+    uint256 constant balance =  1 ether;
     uint256 constant gas =  1 ;
     
     function setUp() external  {
